@@ -26,7 +26,7 @@
 <!------------ html body ------------>
 <body class="manrope-font">
     <!------------ header ------------>
-    <header class="flex bg-gradient-to-t from-slate-100 to-stone-200 xl:py-8 lg:py-6 md:py-3" >
+    <header class=" bg-gradient-to-t from-slate-100 to-stone-200 xl:py-8 lg:py-6 md:py-3" >
         <!------------ nav-bar ------------>
         <nav class="navbar justify-between bg-base-100 max-w-screen-2xl mx-auto bg-transparent ">
             <!---- logo ---->
@@ -39,11 +39,11 @@
             <!---- menu ---->
             <div class="navbar-center hidden md:hidden xl:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Home</a></li>
-                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Services</a></li>
-                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Portfolio</a></li>
-                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Blogs</a></li>
-                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Contact Us</a></li>
+                    <li><a class="hover:font-semibold hover:bg-transparent hover:text-black text-gray-500 ">Home</a></li>
+                    <li><a class="hover:font-semibold hover:bg-transparent hover:text-black text-gray-500 ">Services</a></li>
+                    <li><a class="hover:font-semibold hover:bg-transparent hover:text-black text-gray-500 ">Portfolio</a></li>
+                    <li><a class="hover:font-semibold hover:bg-transparent hover:text-black text-gray-500 ">Blogs</a></li>
+                    <li><a class="hover:font-semibold hover:bg-transparent hover:text-black text-gray-500 ">Contact Us</a></li>
                 </ul>
             </div>
             <!---- right menu---->
@@ -79,7 +79,31 @@
                     <li class=" lg:hidden "><i class="fa-solid fa-cart-shopping p-3 "></i></li>
                 </ul>
             </div>
-          </nav>
+        </nav>
+        <!------------- banner-section ------------->
+        <div class="hero bg-base-200 my-14 mb-30 bg-transparent">
+            <!---- banner-container ---->
+            <div class="hero-content text-center flex flex-col gap-8">
+                <!---- banner-image ---->
+                <div>
+                    <img src="assets/banner.png" alt="">
+                </div>
+                <!---- banner-content ---->
+                <div class="max-w-screen-lg">
+                    <!-- heading -->
+                    <h1 class="xl:text-6xl md:text-5xl text-4xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <!-- paragraph -->
+                    <p class="py-8 px-10 md:text-lg text-base text-gray-600 font-thin">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <!-- button -->
+                    <button class="btn bg-[rgb(171,239,95,0.6)] font-normal text-lg py-6 rounded-3xl ">
+                    View Details
+                        <i class="fa-solid fa-arrow-right -rotate-30 text-base bg-[rgb(171,239,95)] text-black p-2 rounded-full "></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 </html>
