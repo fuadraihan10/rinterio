@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------ importing daisyui and tailwind css ------------>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!------------ importing google fonts ------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/ccs2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!------------ importing fonawesome ------------>
+    <script src="https://kit.fontawesome.com/04d502c16c.js" crossorigin="anonymous"></script>
+    <!------------ making custom-font -> mangrope ------------>
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+            }
+    </style>
     <title>Rinterio</title>
 </head>
-<body>
-    
+<!------------ html body ------------>
+<body class="manrope-font">
+    <!------------ header ------------>
+    <header class="flex bg-gradient-to-t from-slate-100 to-stone-200 xl:py-8 lg:py-6 md:py-3" >
+        <!------------ nav-bar ------------>
+        <nav class="navbar justify-between bg-base-100 max-w-screen-2xl mx-auto bg-transparent ">
+            <!---- logo ---->
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right -rotate-30 text-xl bg-[rgb(171,239,95)] p-2 rounded-full m-1"></i>
+                    Rinterio
+                </a>
+            </div>
+            <!---- menu ---->
+            <div class="navbar-center hidden md:hidden xl:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Home</a></li>
+                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Services</a></li>
+                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Portfolio</a></li>
+                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Blogs</a></li>
+                    <li><a class="hover:font-semibold hover:text-black text-zinc-500 ">Contact Us</a></li>
+                </ul>
+            </div>
+            <!---- right menu---->
+            <div class="navbar-end hidden lg:flex gap-4 ml-72 mr-3">
+                <i class="fa-solid fa-magnifying-glass p-3 bg-white rounded-full"></i>
+                <i class="fa-solid fa-cart-shopping p-3 bg-white rounded-full"></i>
+                <a class="btn bg-[rgb(171,239,95)] font-bold text-lg py-6 rounded-3xl ">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right -rotate-30 text-base bg-black text-white p-2 rounded-full "></i>
+                </a>
+            </div>
+            <!---- small and medium device dropdown ---->
+            <div class="dropdown dropdown-bottom dropdown-end flex ">
+                <!-- dropdown-icon -->
+                <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <!-- dropdown-items -->
+                <ul
+                  tabindex="0" class="dropdown-content menu bg-base-100 rounded-full  z-1 w-52 p-2 shadow-sm mt-5 ">
+                    <li class=" lg:hidden ">
+                        <a class="btn bg-[rgb(171,239,95)] font-bold text-lg py-6 rounded-3xl ">
+                        Book Consult
+                        <i class="fa-solid fa-arrow-right -rotate-30 text-base bg-black text-white p-2 rounded-full "></i>
+                    </a>
+                    </li>
+                    <li class="p-1"><a>Home</a></li>
+                    <li class="p-1"><a>Services</a></li>
+                    <li class="p-1"><a>Portfolio</a></li>
+                    <li class="p-1"><a>Blogs</a></li>
+                    <li class="p-1"><a>Contact Us</a></li>
+                    <li class=" lg:hidden "><i class="fa-solid fa-magnifying-glass p-3"></i></li>
+                    <li class=" lg:hidden "><i class="fa-solid fa-cart-shopping p-3 "></i></li>
+                </ul>
+            </div>
+          </nav>
+    </header>
 </body>
 </html>
